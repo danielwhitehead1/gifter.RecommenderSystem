@@ -1,0 +1,21 @@
+{ "ebay": 
+  { 
+    "antiques": "20081", "art": "550", "baby": "2984", "books_comics_and_magazines": "267", "business_office_and_industrial": "12576", 
+    "cameras_and_photography": "625", "cars_motorcycles_and_vehicles": "9800", "clothes_shoes_and_accessories": "11450", "coins": "11116", 
+    "collectables": "1", "computers_tablets_and_networking": "58058", "crafts": "14339", "dolls_and_bears": "237", "dvds_films_and_tv": "11232", 
+    "events_tickets": "1305", "garden_and_patio": "159912", "health_and_beauty": "26395", "holidays_and_travel": "3252", "home_furniture_and_diy": "11700", 
+    "jewellery_and_watches": "281", "mobile_phones_and_communication": "15032", "music": "11233", "musical_instruments": "619", "pet_supplies": "1281", 
+    "pottery_porcelain_and_glass": "870", "property": "10542", "sound_and_vision": "293", "sporting_goods": "888", "sports_memorabilia": "64482", "stamps": "260", 
+    "toys_and_games": "220", "vehicle_parts_and_accessories": "131090", "video_games_and_consoles": "1249", "wholesale_and_job_lots": "40005", "everything_else": "99"
+  },
+  "etsy": 
+  { 
+    "accessories": "accessories", "art": "art", "bags_and_purses": "bags_and_purses", "bath_and_beauty": "bath_and_beauty", 
+    "books_and_zines": "books_and_zines", "candles": "candles", "ceramics_and_pottery": "ceramics_and_pottery", "children": "children", 
+    "clothing": "clothing", "crochet": "crochet", "dolls_and_miniatures": "dolls_and_miniatures", "everything_else": "everything_else", 
+    "furniture": "furniture", "geekery": "geekery", "glass": "glass", "holidays": "holidays", "housewares": "housewares", "jewelry": "jewelry", 
+    "knitting": "knitting", "music": "music", "needlecraft": "needlecraft", "paper_goods": "paper_goods", "patterns": "patterns", "pets": "pets", 
+    "plants_and_edibles": "plants_and_edibles", "quilts": "quilts", "supplies": "supplies", "toys": "toys", "vintage": "vintage", "weddings": "weddings", 
+    "woodworking": "woodworking" 
+  }
+}

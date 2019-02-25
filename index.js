@@ -1,15 +1,36 @@
 const cron = require('node-cron');
 const express = require('express');
-const fs = require('fs');
+let simplerecommender = require('./lib/favourite_recommender_system-lib');
+let complexrecommender = require('./lib/cosine_recommender_system-lib');
 
 app = express();
 
-cron.schedule("1 * * * *", function() {
-  console.log('Running a task every first minte.');
-  //SEND API CALL TO CREATE SIMILAR SUGGESTIONS
-  // WILL NEED QUERY TO PULL FAVOURITED SUGGESTIONS AND ASSOCIATED USER KEYWORDS
-  // LOOP THROUGH EACH USER FINDING SIMILAR USERS
-  // FOR THOSE SIMILAR USERS
-})
+// cron.schedule("* * * * *", function() {
+  // simplerecommender.simplerecommend();
+// })
 
-// CAN ADD DIFFERENT SHCEDULING FUNCTIONS IN HERE
+// cron.schedule("* * * * *", function() {
+  complexrecommender.complexrecommend();
+// })
+
+
+/**
+ * This section is for helping to pull category info from apis, should be refactored into functions
+ */
+
+// let ebay = require('./ebay_categories.json');
+// let etsy = require('./etsy_categories.json');
+
+// let string = ''
+// etsy.results.forEach(element => {
+//   string += element.name + ' int, '
+// });
+// ebay.GetCategoryInfoResponse.CategoryArray.Category.forEach(element => {
+//     string += '"' + element.CategoryName.toLowerCase().replace(/\s/g, '_').replace(/&/g, 'and').replace(/,/g, '').replace(/\//, '_') + '"' + ': "' + element.CategoryID + '", '
+// });
+
+// console.log(string);
+
+// PROCESS TO CHANGE EBAY GATEGORY NAMES TO COLLUMN NAMES
+// .toLowerCase().replace(/\s/g, '_').replace(/&/g, 'and').replace(/,/g, '').replace(/\//, '_')
+
