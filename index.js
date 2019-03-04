@@ -1,16 +1,16 @@
 const cron = require('node-cron');
 const express = require('express');
 let simplerecommender = require('./lib/favourite_recommender_system-lib');
-let complexrecommender = require('./lib/cosine_recommender_system-lib');
+let cosineRecommender = require('./lib/cosine_recommender_system-lib');
 
 app = express();
 
 // cron.schedule("* * * * *", function() {
-  // simplerecommender.simplerecommend();
+  // simplerecommender.recommend();
 // })
 
 // cron.schedule("* * * * *", function() {
-  complexrecommender.complexrecommend();
+  cosineRecommender.recommend();
 // })
 
 
