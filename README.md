@@ -1,1 +1,1 @@
-Repository to store shcedule functions for Gifter.
+Repository that contains the recommender system for Gifter.
