@@ -2,15 +2,21 @@ const cron = require('node-cron');
 const express = require('express');
 let simplerecommender = require('./lib/favourite_recommender_system-lib');
 let cosineRecommender = require('./lib/cosine_recommender_system-lib');
+let svdRecommender = require('./lib/svd_recommender_system-lib');
 
 app = express();
 
 // cron.schedule("* * * * *", function() {
-  // simplerecommender.recommend();
+//   simplerecommender.recommend();
 // })
 
-// cron.schedule("* * * * *", function() {
+cron.schedule("* * * * *", function() {
   cosineRecommender.recommend();
+})
+
+// Should be run on a schedule to update the ratings and categories, used in the SVD recommender
+// cron.schedule("* * * * *", function() {
+  // svdRecommender.createTestData();
 // })
 
 
@@ -18,8 +24,8 @@ app = express();
  * This section is for helping to pull category info from apis, should be refactored into functions
  */
 
-// let ebay = require('./ebay_categories.json');
-// let etsy = require('./etsy_categories.json');
+// let ebay = require('./json/ebay_categories.json');
+// let etsy = require('./json/etsy_categories.json');
 
 // let string = ''
 // etsy.results.forEach(element => {
